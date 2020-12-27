@@ -1,0 +1,473 @@
+	/*---Класи для header---*/
+	header a {
+		color:#ffffff;
+	}
+	#single{
+		margin:0;
+		width:100%;
+		height:100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items:center;
+		text-align:center;
+	}
+	.headerContainer-single a{
+		width:20%;
+		margin:0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:center;
+	}
+	.headerContainer-double p{
+		width:25%;
+		margin:0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:center;
+	}
+	.headerContainer-end p{
+		width:33%;
+		margin:0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:center;
+	}
+	
+	
+	
+	/*---Класи для nav---*/
+	.navContainer-noborder p{
+		transform: translate(0, 17%);
+		width:100%;
+		margin:0;
+		text-align:center;
+	}
+	nav p {
+		float:left;
+		margin-top:24px;
+		margin-bottom:24px;
+		text-align:center;
+	}
+	.btn {
+		margin-bottom:25px; 
+		margin-top:27px; 
+		width:100%;
+		background-color: #86c2d9;
+		padding: 0px;
+		font: 12pt arial;
+		border: none;
+		outline: none;
+	}
+	.dropdown-content a {
+		color: black;
+		border:2px #bbbbbb solid;
+		width:100%;
+		padding: 12px 10px;
+		text-decoration: none;
+		display: block;
+		text-align:center;
+		box-sizing:border-box;
+	}
+	.dropdown-content a:hover {background-color: #ddd}
+	.navContainer:hover .dropdown-content {
+		display: block;
+	}
+	.btn:hover, .navContainer:hover .btn {
+		background-color: #86c2d9;
+	}
+	.navContainer-noborder:hover .dropdown-content {
+		display: block;
+	}
+	.btn:hover, .navContainer-noborder:hover .btn {
+		background-color: #86c2d9;
+	}
+	
+	
+	
+	/*---Клас стартового вікна---*/
+	.startScreen p{
+		text-align:center;
+	}
+	
+	
+	
+	/*---Класи для блоку instruction---*/
+	.blockTitle p{
+		margin:0;
+	}
+	.instruction .textBlock img{
+		position:absolute;
+		left:50%;
+		top:12%;
+		transform:translate(-50%,-12%);
+	}
+	.instruction .textBlock p{
+		text-align: left;
+		margin-left:20%;
+		margin-right:20%;
+		transform:translate(0,140px);
+	}
+	.instruction .textBlock h3{
+		transform:translate(0,140px);
+	}
+	.instruction .textBlock p:before{
+		content:'\2022   ';
+	}
+	
+	
+	
+	/*---Класи для блоку tourList---*/
+	#searchForm{
+		position:relative;
+		margin:0 auto;
+		height:145px;
+		width:100%;
+	}
+	.tourList input{
+		float:left;
+		border: none;
+		outline: none;
+	}
+	.tourList input[list="tourNames"]{
+		position:relative;
+		width:24.5%;
+		height:30px;
+		top:10px;
+		margin:10px auto;
+		margin-right:1%;
+		padding:0.5% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+	}
+	.tourList input[list="countries"], input[list="dates"]{
+		position:relative;
+		width:12.5%;
+		height:30px;
+		top:10px;
+		margin:10px auto;
+		margin-right:1%;
+		padding:0.5% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+	}
+	.tourList input[type="number"]{
+		position:relative;
+		width:8%;
+		height:30px;
+		top:10px;
+		margin:10px auto;
+		margin-right:1%;
+		padding:0.5% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+	}
+	.tourList input[type="submit"]{
+		position:relative;
+		width:14.5%;
+		height:47px;
+		top:10px;
+		margin:10px auto;
+		padding:0.5% 1.25%;
+		background:#3781f0;
+		border-radius:30px;
+		border:2px #2658a3 solid;
+		font:14px arial;
+		color:white;
+	}
+	.sortBar{
+		position:relative;
+		display:flex;
+		float:left;
+		top:10px;
+		width:97%;
+		height:25px;
+		margin:10px auto;
+		padding:0.3% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+	}
+	.sortBar p{
+		width:15%;
+		height:25px;
+		margin:0;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:center;
+	}
+	
+	
+	
+	/*---Класи для блоку tourCard---*/
+	#tour-img{
+		position:absolute;
+		top:0;
+		right:0;
+		width:100%;
+	}
+	#label-left{
+		position:absolute;
+		width:27%;
+		height:35px;
+		padding:2% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:16px arial;
+		color:black;
+		top:-60%;
+		left:20%;
+		box-sizing:border-box;
+		z-index:1;
+	}
+	#label-right{
+		position:absolute;
+		width:30%;
+		height:35px;
+		padding:2% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:16px arial;
+		color:black;
+		top:-60%;
+		left:80%;
+		box-sizing:border-box;
+		z-index:1;
+	}
+	.tourCard h3{
+		position:absolute;
+		width:100%;
+		left:50%;
+		transform:translate(-50%,260px);
+		font-size:18px;
+	}
+	.tourCard p{
+		position:absolute;
+		width:90%;
+		text-align:center;
+		left:50%;
+		transform:translate(-50%,300px);
+		font-size:16px;
+	}
+	.tourCard form{
+		position:absolute;
+		height:80px;
+		width:100%;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:center;
+		background:#dadada;
+		border-radius:0 0 28px 28px;
+		bottom:0;
+		right:0;
+	}
+	.tourCard input[list="dates1"]{
+		position:relative;
+		width:30%;
+		height:40px;
+		display:flex;
+		padding:0.5% 3%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+		box-sizing:border-box;
+	}
+	.transportType{
+		position:relative;
+		width:40px;
+		height:40px;
+		display:flex;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+	}
+	.transportType img{
+		position:absolute;
+		width:23px;
+		height:23px;
+		left:22%;
+		transform:translate(0, 40%);
+	}
+	.tourCard input[type="submit"]{
+		position:relative;
+		width:30%;
+		height:40px;
+		top:0;
+		margin:0;
+		padding:0 6%;
+		display:flex;
+		background:#3781f0;
+		border-radius:30px;
+		border:2px #2658a3 solid;
+		font:14px arial;
+		color:white;
+		box-sizing:border-box;
+	}
+	
+	
+	/*---Класи для блоку pageBar---*/
+	.pagesBar{
+		position:relative;
+		display:flex;
+		width:20%;
+		height:30px;
+		top:10px;
+		margin:10px auto;
+		padding:0.5% 1.25%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:16px arial;
+		color:black;
+	}
+	.pagesBar a{
+		display:flex;
+		margin:0 auto;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items:center;
+		text-decoration: none;
+	}
+	
+	
+	
+	/*---Класи для блоку introduction---*/
+	.introduction .textBlock p{
+		text-align: left;
+		margin-left:8%;
+		margin-right:8%;
+		transform:translate(0,20px);
+	}
+	.introduction .textBlock h3{
+		transform:translate(0,20px);
+	}
+	.introduction iframe{
+		width:675px;
+		margin:10px;
+	}
+	
+	
+	
+	/*---Класи для блоку reviews---*/
+	.reviews .textBlock p{
+		text-align: left;
+		margin-left:15%;
+		margin-right:15%;
+		transform:translate(0,20px);
+	}
+	.reviews .textBlock h3{
+		transform:translate(0,20px);
+	}
+	.reviews .row-height-400 a{
+		text-decoration:none;
+		color:#000000;
+	}
+	#next{
+		position:relative;
+		bottom:-10px;
+		float:right;
+		margin-right:50px;
+		margin-top:10px;
+		margin-bottom:10px;
+		height:16px;
+		width:24px;
+		border-radius:20px;
+		background-color: #ffffff;
+		padding:0.75% 1%;
+		border:2px #bbbbbb solid;
+		text-decoration:none;
+		color:#000000;
+	}
+	
+	
+	
+	/*---Класи для блоку mailing-form---*/
+	.mailing-form form{
+		display:block;
+		width:30%;
+		margin:10px auto;
+	}
+	.mailing-form input[type="text"]{
+		position:relative;
+		width:100%;
+		height:40px;
+		top:10px;
+		margin:10px auto;
+		padding:0.5% 4%;
+		background:#ffffff;
+		border-radius:30px;
+		border:2px #bbbbbb solid;
+		font:14px arial;
+		color:black;
+		box-sizing:border-box;
+		outline:none;
+	}
+	.mailing-form input[type="submit"]{
+		position:relative;
+		width:100%;
+		height:40px;
+		top:10px;
+		margin:10px auto;
+		padding:0.5% 4%;
+		background:#3781f0;
+		border-radius:30px;
+		border:2px #2658a3 solid;
+		font:14px arial;
+		color:white;
+		box-sizing:border-box;
+		outline:none;
+	}
+	.mailing-form img{
+		position:absolute;
+		margin:10px 0;
+		left:50%;
+		bottom:10px;
+		transform:translate(-50%, 0);
+	}
+	
+	
+	
+	/*---Класи для блоку footer---*/	
+	.footText h3{
+		width:100%;
+		padding:10px 0;
+		text-align:center;
+	}
+	.footText p{
+		padding:10px 7%;
+	}
+	.footText a {
+		color:#ffffff;
+	}
+	
+	
+	
+	/*---Класи для блоку copyright-block---*/
+	.copyright-block p{
+		width:30%;
+		margin:0 3%;
+		padding:20px 0;
+		text-align:center;
+	}
